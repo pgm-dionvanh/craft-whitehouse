@@ -1,0 +1,67 @@
+fieldLayouts:
+  93df5bf0-8da1-4fb6-91af-ca465bfdcec7:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c13fdcf7-d357-4f16-8618-383ab36b006a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a4ab0652-eb0d-4a94-8586-aa9e597f372c # Asset
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dd015375-d4c5-4948-a9c8-cf2861f88302
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f44fae7f-f3e0-4625-a841-ebb232598950 # Rich Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d474a64e-ee0e-4bda-a02b-b81e4a73ad12
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ac5931b3-df1a-4c7f-af8e-540f471a20e8
+        userCondition: null
+handle: employeegrid
+hasTitleField: true
+name: employeeGrid
+section: 823e93b3-0e02-4927-9c7c-3ea8b9596f26 # Detail Administration
+sortOrder: 3
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

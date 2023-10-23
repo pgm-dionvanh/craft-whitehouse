@@ -1,0 +1,32 @@
+defaultPlacement: end
+enableVersioning: true
+handle: navigation
+name: Navigation
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primaire invoer-pagina'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a33dbeb7-7a84-494b-85f5-49871855c101: # La Casa Blanca
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  bf94dae5-2060-49f8-8495-3439a53edc7c: # The White House
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 2a1bdd51-92fe-4c40-960b-09c8dd89415a
+type: structure

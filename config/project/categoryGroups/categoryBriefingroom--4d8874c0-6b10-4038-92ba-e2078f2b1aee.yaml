@@ -1,0 +1,50 @@
+defaultPlacement: end
+fieldLayouts:
+  9256a50a-3e91-485a-b660-b2f1443920e9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 9a7da135-e414-4e56-bdd9-51f3e1eea9cf
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 94983ce5-54e9-47f5-88d1-e8ff7106904d
+        userCondition: null
+handle: categoryBriefingroom
+name: 'Category BriefingRoom'
+siteSettings:
+  a33dbeb7-7a84-494b-85f5-49871855c101: # La Casa Blanca
+    hasUrls: true
+    template: pages/_briefingRoom.twig
+    uriFormat: 'briefing-room/{slug}'
+  bf94dae5-2060-49f8-8495-3439a53edc7c: # The White House
+    hasUrls: true
+    template: pages/_briefingRoom.twig
+    uriFormat: 'briefing-room/{slug}'
+structure:
+  maxLevels: null
+  uid: 8c913609-f044-418f-b01c-77a5fae56fb2

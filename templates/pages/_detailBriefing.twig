@@ -1,0 +1,19 @@
+
+{% extends "/layouts/_main" %}
+
+{% block content %}
+<section class="mt-32 m-auto mt-12 max-w-4xl">
+    <div>
+        <p class="text-center mb-4"> {{ entry.date|date }} </p>
+    </div>
+    <div>
+        <h1 class="text-wh-blue text-center text-4xl mb-4 font-bold"> {{ entry.title }} </h1>
+    </div>
+    <div class="w-1/2 mb-4 m-auto">
+        <ol class="flex justify-center gap-2 border-t-[1px] border-b-[1px] ">
+            <li>{{ entry.category.one().title }}</li>
+        </ol>
+    </div>
+    <span> {{ entry.richText }} </span>
+</section>
+{% endblock content %}

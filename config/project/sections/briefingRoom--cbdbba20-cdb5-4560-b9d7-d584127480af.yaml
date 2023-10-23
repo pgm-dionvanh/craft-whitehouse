@@ -1,0 +1,17 @@
+defaultPlacement: end
+enableVersioning: true
+handle: briefingRoom
+name: 'Briefing Room'
+propagationMethod: all
+siteSettings:
+  a33dbeb7-7a84-494b-85f5-49871855c101: # La Casa Blanca
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/_briefingRoom.twig
+    uriFormat: briefing-room
+  bf94dae5-2060-49f8-8495-3439a53edc7c: # The White House
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/_briefingRoom.twig
+    uriFormat: briefing-room
+type: single

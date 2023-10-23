@@ -1,0 +1,54 @@
+{% set allCategorys = craft.categories.group('categoryBriefingroom') %}
+{% set slug = craft.app.request.getSegment(2) %}
+
+{% if craft.app.request.getSegment(2) %}
+    {% set briefingCases = craft.entries.section('briefingRoomCase').category(craft.categories.slug(slug).one()).all() %}
+{% else %}
+    {% set briefingCases = craft.entries.section('briefingRoomCase').all() %}
+{% endif %}
+
+{% extends "/layouts/_main" %}
+
+{% block content %}
+<section class="mt-32 m-auto max-w-screen-lg">
+    <h1 class="text-wh-blue text-2xl text-center">{{ slug ? craft.categories.slug(slug).one().title : craft.entries.slug(craft.app.request.getSegment(1)).one().title }}</h1>
+    <div class="flex justify-between gap-12">
+        <div class="w-full mt-4">
+            {% if briefingCases is empty %}
+                <div class=" flex justify-center">
+                    <span class="text-center"> {{ "briefing.empty" |t }} </span>
+                </div>
+            {% else %}
+            
+            {% for briefingCase in briefingCases %}
+            <div>
+            <a href="{{ briefingCase.url }}">
+                <h1 class="text-wh-blue text-2xl">{{ briefingCase.title }}</h1>
+            </a>
+                <span> {{ briefingCase.date|date }} </span>
+                <span> * </span>
+                <a class="text-wh-blue text-xs underline" href={{briefingCase.category.one().url}}> {{ briefingCase.category.one().title }} </a>
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+        <div class="p-4 border-l-2">
+            <span>{{ "briefing.filter" |t }}<span/>
+            <ul class="mt-12">
+                <li>
+                    <span> 
+                        <a href={{ entry is defined ? entry.url : craft.entries.section('briefingRoom').one().url }}> {{ "briefing.all" |t }} </a>
+                    </span>
+                </li>
+                {% for category in allCategorys %}
+                    <li>
+                        <span> 
+                            <a class="text-wh-blue text-xs underline" href={{category.url}}> {{ category.title }} </a>
+                        </span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock content %}

@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: en
+name: 'The White House'
+primary: true
+siteGroup: cbfb4049-9b14-4fc8-9326-030ec76d1840 # Whitehouse
+sortOrder: 1

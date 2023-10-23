@@ -1,0 +1,55 @@
+fieldLayouts:
+  519e0cf7-5d01-4a60-9cc7-991f7933e738:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 4eccc5b5-ee81-42b9-8328-e662e7a32139
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f44fae7f-f3e0-4625-a841-ebb232598950 # Rich Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a5e6490b-87e8-4e3f-9967-dca5870eac2c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9a818ccb-b275-4abc-b8eb-e33c471c86d2
+        userCondition: null
+handle: administration
+hasTitleField: true
+name: Administration
+section: 0039986a-3b63-4d28-99aa-896310af3de6 # Administration
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

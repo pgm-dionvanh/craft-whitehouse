@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        {% include "partials/_meta" %}
+        <title> {{ entry.title is defined ? siteName ~ ' - ' ~ entry.title : siteName }} </title>
+        <link rel="stylesheet" href="{{ mix('app.css') }}">
+    </head>
+        
+    <body class="font-['Brutapro'] p-0 m-0">
+        {% block header %}{% endblock header %}
+
+        {% block search %}{% endblock search %}
+
+        {% block main %}{% endblock main %}
+
+        {% block footer %}{% endblock footer %}
+    </body>
+    {% block bottomScripts %}
+        <script src="{{ mix('app.js') }}"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    {% endblock %}
+</html>

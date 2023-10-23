@@ -1,0 +1,67 @@
+fieldLayouts:
+  180e5794-baa5-4b68-b750-b28291ad8f04:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 4b475128-b079-4130-ba12-a72655b7110f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a4ab0652-eb0d-4a94-8586-aa9e597f372c # Asset
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2e70f87a-440e-4090-bb7f-23eaf0bd09c9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f44fae7f-f3e0-4625-a841-ebb232598950 # Rich Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e8d98155-a30b-45c0-bfeb-57163f5cdd0a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a47b0156-0286-4c9a-be62-f45fafeb6f28
+        userCondition: null
+handle: lrgrid
+hasTitleField: true
+name: LrGrid
+section: 823e93b3-0e02-4927-9c7c-3ea8b9596f26 # Detail Administration
+sortOrder: 2
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

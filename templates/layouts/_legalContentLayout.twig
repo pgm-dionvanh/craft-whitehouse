@@ -1,0 +1,10 @@
+{% extends "/layouts/_main" %}
+
+{% if not title is defined %}{% set title = '' %}{% endif %}
+
+{% block content %}
+<section class="max-w-4xl m-auto mt-32">
+    <h1 class="m-auto max-w-4xl text-wh-blue mt-8 text-center text-5xl font-bold mb-12">{{ title }}</h1>
+    <span class="text-wh-blue text-md"> {{ entry.richText }} </span>
+</section>
+{% endblock content %}

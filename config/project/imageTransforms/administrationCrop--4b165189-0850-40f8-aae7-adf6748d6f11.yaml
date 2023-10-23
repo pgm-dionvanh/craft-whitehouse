@@ -1,0 +1,10 @@
+format: null
+handle: administrationCrop
+height: 530
+interlace: none
+mode: crop
+name: 'Administration Crop'
+position: center-center
+quality: null
+upscale: true
+width: 700

@@ -1,0 +1,29 @@
+defaultPlacement: end
+enableVersioning: true
+handle: privacypolicy
+name: privacyPolicy
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a33dbeb7-7a84-494b-85f5-49871855c101: # La Casa Blanca
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/legal/_legalContent.twig
+    uriFormat: privacy
+  bf94dae5-2060-49f8-8495-3439a53edc7c: # The White House
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/legal/_legalContent.twig
+    uriFormat: privacy
+type: single

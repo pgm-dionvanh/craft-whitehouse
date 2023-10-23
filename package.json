@@ -1,0 +1,31 @@
+{
+  "name": "The white house",
+  "version": "0.2",
+  "description": "A website made for the Content Management System course at Artevelde University",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "mix",
+    "build:watch": "mix watch",
+    "build:prod": "mix --production"
+  },
+  "keywords": [
+    "Website",
+    "Craft",
+    "CMS",
+    "Whitehouse Clone"
+  ],
+  "author": "Dion Van Hecke",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.49",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.56.1",
+    "sass-loader": "^12.1.0",
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "tailwind-scrollbar-hide": "^1.1.7"
+  }
+}

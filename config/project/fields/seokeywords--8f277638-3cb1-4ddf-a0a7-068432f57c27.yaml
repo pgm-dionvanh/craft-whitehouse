@@ -1,0 +1,19 @@
+columnSuffix: zidbhwuu
+contentColumnType: text
+fieldGroup: 2f68d8a0-cca5-493f-9b58-7200a4d7a861 # Seo
+handle: seokeywords
+instructions: null
+name: seoKeywords
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

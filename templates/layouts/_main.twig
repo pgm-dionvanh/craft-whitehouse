@@ -1,0 +1,22 @@
+{% extends "/layouts/_base" %}
+
+{% block header %}
+            {% include 'components/_header' %}
+{% endblock header %}
+
+{% block search %}
+    {% include 'components/_search' %}
+{% endblock search %}
+
+{% block main %}
+<main>
+    {% block content %}
+    {% endblock content %}
+</main>
+{% endblock %}
+
+{% block footer %}
+        <section class="max-w-screen-lg m-auto mt-32">
+            {% include 'components/_footer' only %}
+        </section/>
+{% endblock footer %}

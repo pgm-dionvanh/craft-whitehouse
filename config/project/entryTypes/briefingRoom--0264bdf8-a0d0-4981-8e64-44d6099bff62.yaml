@@ -1,0 +1,43 @@
+fieldLayouts:
+  9447b638-2787-46a0-ba5f-83dabc664dab:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 591c3358-29f8-412c-94c0-e0457a282aaf
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 6e73a308-4a4e-4c9d-a4ce-2ad88989f58b
+        userCondition: null
+handle: briefingRoom
+hasTitleField: false
+name: 'Briefing Room'
+section: cbdbba20-cdb5-4560-b9d7-d584127480af # Briefing Room
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

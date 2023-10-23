@@ -1,0 +1,88 @@
+{% include "components/_newsletter.twig" %}
+{% cache %}
+{% set navItems = craft.entries.section('navigation').type('menuNavigation').all() %}
+{% set footerNavItems = craft.entries.section('navigation').type('footerNavigation').all() %}
+{% set navigationItems = footerNavItems|merge(navItems) %}
+{% set otherLang = craft.app.sites.getAllSites()|without(currentSite) %}
+
+{% set secondNavigationItems = craft.entries.section('navigation').type(['not', 'footerNavigation', 'menuNavigation', 'subNavigation']).all() %}
+
+
+{% set subNavItems = craft.entries.section('navigation').type('subNavigation').all() %}
+
+{% set socialItems = craft.entries.section('socials').all() %}
+
+<footer class="m-auto mt-12 md:max-w-screen-xl pl-[20px] pr-[20px] md:pl-0 md:pr-0 ">
+    <div class="flex wrap">
+        <div class="flex wrap justify-between md:border-t-2 w-full pt-[90px] pb-[90px]">
+            <section class="grid grid-cols-1 md:grid-cols-5 md:gap-32 gap-8">
+                <div class="w-[12rem]">
+                    <ul>
+
+                        {% for navItem in navigationItems %}
+
+                            {% if navItem.externalurl is defined and navItem.externalurl is not null %}
+                                <li class="text-wh-blue hover:text-red-800 text-[13px] mb-2 underline underline-offset-2">
+                                    <a class="button" href="{{ navItem.externalurl }}"> {{ navItem.title }} </a>
+                                </li>
+                            {% else %}
+                                <li class="text-wh-blue hover:text-red-800 text-[13px] mb-2 underline underline-offset-2">
+                                    <a class="button" href="{{ navItem.entryselector.one().url }}"> {{ navItem.title }} </a>
+                                </li>
+                            {% endif %}
+
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div>
+                    <ul class="w-[12rem]">
+                        {% for navItem in secondNavigationItems %}
+                                <li class="text-wh-blue mb-2 text-[13px] hover:text-red-800 underline underline-offset-2">
+                                    <a class="button" href="{{ navItem.entryselector.one().url }}"> {{ navItem.title }} </a>
+                                </li>
+
+                        {% endfor %}
+                        {% cache %}
+                            {% for lang in otherLang %}
+                                {% set requestedSlug = craft.app.request.getUrl(3) %}
+                                {% set locale = craft.app.i18n.getLocaleById(lang.language) %}
+                                {# Set homepage as default #}
+                                {% set url = lang.getBaseUrl() %}         
+                                <li class="text-[#0064bc] hover:text-[#9c1919] underline underline-offset-8">
+                                    <a class="text-[13px]" href="{{ url }}">{{ locale.displayName|ucfirst }}</a>
+                                </li>
+                            {% endfor %}
+                        {% endcache %}      
+                    </ul>
+                </div>
+                <div class="flex md:col-span-2 md:justify-end">
+                    <ul>
+                        {% cache %}
+                            {% for navItem in subNavItems %}
+                                <li class="text-wh-blue hover:text-[#9c1919] mb-2">
+                                    <a class="button text-[10px]" href="{{ navItem.entryselector.one().url }}"> {{ navItem.title }} </a>
+                                </li>
+                            {% endfor %}
+                        {% endcache %} 
+                    </ul>
+                </div>
+                <div class="grid grid-cols-1 w-[12rem]">
+                    <div>
+                        <ul class="flex items-center gap-4">
+                            {% for socItem in socialItems %}
+                                <li>
+                                    <a href="{{ socItem.externalurl }}" target="_blank">{{ svg(socItem.asset.one())|attr({ class: 'w-[17px] h-[17px] fill-[#0a2458] hover:fill-[#9c1919]' }) }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="text-[10px] mb-4 mt-8">{{ siteName }}</p>
+                        <address class="text-[13px]">1600 Pennsylvania Ave NW Washington, DC 20500</address>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</footer> 
+{% endcache %}

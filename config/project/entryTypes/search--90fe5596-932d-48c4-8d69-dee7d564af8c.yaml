@@ -1,0 +1,67 @@
+fieldLayouts:
+  425d79bd-d7c7-40b4-9a2f-67f5bab2d04a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 48eb0189-3d36-488f-bbe3-d5d12375727b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f44fae7f-f3e0-4625-a841-ebb232598950 # Rich Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eeb38f37-51d1-4278-b506-c547523ce3fd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3164cd9e-b79d-4912-aea4-8fb18bdc36ed # EntrySelector
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b7c76936-6299-49ce-8f2b-64eb84cbddf6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e1baf237-e0de-4956-a7fc-96a511aae00f
+        userCondition: null
+handle: search
+hasTitleField: true
+name: Search
+section: b1bd3cd1-5c0e-45fe-bc51-4aa74f2cad04 # Search
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,10 @@
+{% extends "/layouts/_main" %}
+
+{% block content %}
+    <section class="flex justify-center mt-32">
+    <form class="flex items-center gap-4" action="/search" method="GET">
+        <input class="bg-slate-300 placeholder:text-slate-500 p-4"  id="s" name="s" placeholder="test" autocomplete="off">
+        <button class="bg-wh-blue text-white p-4" type="submit">{{ "search.name" |t }}</button>
+    </form>
+    </section>
+{% endblock %}

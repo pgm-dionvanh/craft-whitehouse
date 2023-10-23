@@ -1,0 +1,26 @@
+{% extends "/layouts/_main" %}
+{% set banners = craft.entries.section('main').type("banners").all() %}
+
+
+{% block content %}
+<section class="flex flex-col justify-center mt-32">
+    <div class="mb-[90px] rounded-[16px] rounded-t-[16px] rounded-bl-[16px] overflow-hidden relative m-[0_15px_30px] flex justify-center">
+        <div class="flex justify-end overflow-hidden relative flex-col">
+            <div class="p-[0_0_30px_45px] relative min-h-[660px] z-[1]">
+                <div class="flex-row-reverse list-none flex flex-wrap mx-[-10px]">
+                
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="https://web.archive.org/web/20221222024620im_/https://www.whitehouse.gov/wp-content/uploads/2021/01/header-1216.jpeg 2339w, https://web.archive.org/web/20221222024620im_/https://www.whitehouse.gov/wp-content/uploads/2021/01/header-1216.jpeg?resize=615,331 615w, https://web.archive.org/web/20221222024620im_/https://www.whitehouse.gov/wp-content/uploads/2021/01/header-1216.jpeg?resize=768,414 768w, https://web.archive.org/web/20221222024620im_/https://www.whitehouse.gov/wp-content/uploads/2021/01/header-1216.jpeg?resize=1270,684 1270w, https://web.archive.org/web/20221222024620im_/https://www.whitehouse.gov/wp-content/uploads/2021/01/header-1216.jpeg?resize=1536,827 1536w, https://web.archive.org/web/20221222024620im_/https://www.whitehouse.gov/wp-content/uploads/2021/01/header-1216.jpeg?resize=2048,1103 2048w, https://web.archive.org/web/20221222024620im_/https://www.whitehouse.gov/wp-content/uploads/2021/01/header-1216.jpeg?resize=1180,636 1180w, https://web.archive.org/web/20221222024620im_/https://www.whitehouse.gov/wp-content/uploads/2021/01/header-1216.jpeg?resize=1038,559 1038w" sizes="(max-width: 2339px) 100vw, 2339px">
+
+                        
+                        <img width="1400" height="780" class="object-fit-cover" src="https://web.archive.org/web/20221222024620im_/https://www.whitehouse.gov/wp-content/uploads/2021/01/header-1216.jpeg?w=1400&amp;h=780&amp;crop=1" srcset="https://web.archive.org/web/20221222024620im_/https://www.whitehouse.gov/wp-content/uploads/2021/01/header-1216.jpeg 2339w, https://web.archive.org/web/20221222024620im_/https://www.whitehouse.gov/wp-content/uploads/2021/01/header-1216.jpeg?resize=615,331 615w, https://web.archive.org/web/20221222024620im_/https://www.whitehouse.gov/wp-content/uploads/2021/01/header-1216.jpeg?resize=768,414 768w, https://web.archive.org/web/20221222024620im_/https://www.whitehouse.gov/wp-content/uploads/2021/01/header-1216.jpeg?resize=1270,684 1270w, https://web.archive.org/web/20221222024620im_/https://www.whitehouse.gov/wp-content/uploads/2021/01/header-1216.jpeg?resize=1536,827 1536w, https://web.archive.org/web/20221222024620im_/https://www.whitehouse.gov/wp-content/uploads/2021/01/header-1216.jpeg?resize=2048,1103 2048w, https://web.archive.org/web/20221222024620im_/https://www.whitehouse.gov/wp-content/uploads/2021/01/header-1216.jpeg?resize=1180,636 1180w, https://web.archive.org/web/20221222024620im_/https://www.whitehouse.gov/wp-content/uploads/2021/01/header-1216.jpeg?resize=1038,559 1038w" alt="" object-fit-cover="https://www.whitehouse.gov/wp-content/uploads/2021/01/header-1216.jpeg?w=1400&amp;h=780&amp;crop=1" sizes="100vw">
+                    </picture>
+            </div>
+        </div>
+    </div>
+    </section>
+    {% for banner in banners %}
+        {% include"components/_banner.twig" with banner %}
+    {% endfor %}
+
+{% endblock content %}

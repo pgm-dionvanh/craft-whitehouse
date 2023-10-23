@@ -1,0 +1,9 @@
+baseUrl: $SPANISH_SITE_URL
+enabled: '1'
+handle: laCasaBlanca
+hasUrls: true
+language: es
+name: 'La Casa Blanca'
+primary: false
+siteGroup: cbfb4049-9b14-4fc8-9326-030ec76d1840 # Whitehouse
+sortOrder: 2

@@ -1,0 +1,29 @@
+{% extends "/layouts/_main" %}
+{% set briefingCases = craft.entries.section('briefingRoomCase').search(craft.app.request.getQueryParam('s') ? craft.app.request.getQueryParam('s'): "").all() %}
+
+{% block content %}
+<section class="mt-32">
+    <h1 class="m-auto max-w-4xl text-center text-5xl text-wh-blue w-1/3"> {{ entry.title }} </h1>
+    <h3 class="m-auto max-w-4xl mt-8 text-center text-wh-blue w-1/2"> {{ entry.richText|append(craft.app.request.getQueryParam('s') ? '"' ~ craft.app.request.getQueryParam('s') ~ '"': "") }} </h3>
+    <section class="mt-8 m-auto max-w-screen-lg">
+
+        <div class="flex justify-between gap-12">
+            <div class="w-full">
+            
+                
+                {% for briefingCase in briefingCases %}
+                <div>
+                <a href="{{ briefingCase.url }}">
+                    <h1 class="text-wh-blue text-2xl">{{ briefingCase.title }}</h1>
+                </a>
+                    <span> {{ briefingCase.date|date }} </span>
+                    <span> * </span>
+                    <a class="text-wh-blue text-xs underline" href={{briefingCase.category.one().url}}> {{ briefingCase.category.one().title }} </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

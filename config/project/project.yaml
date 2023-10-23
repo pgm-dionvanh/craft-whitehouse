@@ -1,0 +1,104 @@
+dateModified: 1692542479
+email:
+  fromEmail: dionvanh@student.arteveldehs.be
+  fromName: Whitehouse
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  administration:
+    hasUrls: true
+    name: Administration
+    settings:
+      path: '@webroot/uploads'
+    type: craft\fs\Local
+    url: /uploads
+meta:
+  __names__:
+    0d42c3bc-51e5-47a1-b267-843102e2166e: Administration # Administration
+    00f0ec20-1164-411d-8da4-6cc3970544bf: employeeGrid # employeeGrid
+    2b885c57-3670-46a5-a62c-4d9b14448097: Date # Date
+    2cc70982-ac78-4ae6-85c1-3a881fabc807: 'Briefing Room Case' # Briefing Room Case
+    2f68d8a0-cca5-493f-9b58-7200a4d7a861: Seo # Seo
+    3bebbb3e-880a-49b0-b887-adf1e41b0617: seoDescription # seoDescription
+    4ab46ed5-ef26-4ce8-a307-4e534acb0b22: Priorities # Priorities
+    4b5ebf10-ea36-4ed6-ba75-4f61dbc2f757: entrySelector # entrySelector
+    4b165189-0850-40f8-aae7-adf6748d6f11: 'Administration Crop' # Administration Crop
+    4d8874c0-6b10-4038-92ba-e2078f2b1aee: 'Category BriefingRoom' # Category BriefingRoom
+    4f46118a-51aa-4d2f-925c-d293f1616660: 'Menu Navigation' # Menu Navigation
+    5aa472f9-30e8-42d7-82c9-346b33789d73: gridCols # gridCols
+    5af1e1c9-75e8-4f63-95fd-d3df9d2778ad: 'Public Schema' # Public Schema
+    5b343358-e3b1-41fc-bf57-d1da9760633c: Default # Default
+    7a8915fe-72f7-4d6f-b053-896b7ca58395: Navigation # Navigation
+    8f4e2077-3c8d-40b6-934b-9dc15af309f5: AccessibilityStatement # AccessibilityStatement
+    8f277638-3cb1-4ddf-a0a7-068432f57c27: seoKeywords # seoKeywords
+    9c392aa2-06f3-495e-99d2-aa44f6cad870: image # image
+    9e0f6723-0abc-48db-8395-578391d4321c: Description # Description
+    10dd9019-e588-4cf7-a144-7c05ec248e03: LrGrid # LrGrid
+    30c2ab06-2911-4e17-b196-2c2195285610: Navigation # Navigation
+    33fd1276-865e-4405-ba63-346893231188: Priorities # Priorities
+    0043c35c-8394-46ef-9b03-d681f232417c: Standaard # Standaard
+    044ade98-b39f-47d1-98dd-bb68b0e09941: seoTitle # seoTitle
+    47b0c9ea-1990-4be7-bcdb-a02a8e42fdae: AccessibilityStatement # AccessibilityStatement
+    49a8c47e-571a-4f9c-ad29-4e16aabddb6d: Tag # Tag
+    54f5aaa8-1d73-4fa6-9135-e80127866e22: Matrix # Matrix
+    57ab8daf-dde6-4115-a62a-e7bf3421d7bb: area51 # area51
+    70d07d6a-6a36-409f-8459-152cbd91cadd: Banners # Banners
+    88d87618-ee70-4f72-ab41-ab0b5ed24476: subTitle # subTitle
+    90fe5596-932d-48c4-8d69-dee7d564af8c: Search # Search
+    160dd163-d13d-451e-99da-c57782446044: matrixField # matrixField
+    0264bdf8-a0d0-4981-8e64-44d6099bff62: 'Briefing Room' # Briefing Room
+    795ff993-a94c-4054-8d9e-9b2abc819c33: globalSeo # globalSeo
+    823e93b3-0e02-4927-9c7c-3ea8b9596f26: 'Detail Administration' # Detail Administration
+    3164cd9e-b79d-4912-aea4-8fb18bdc36ed: EntrySelector # EntrySelector
+    5049ce8a-20d3-4510-899a-d4e5ecd4263f: privacyPolicy # privacyPolicy
+    6265cc8b-aa2f-4f54-b6d3-e0e206122011: privacyPolicy # privacyPolicy
+    07382fe0-6e29-4dea-ba8f-647254e6bae5: Common # Common
+    7836d9f5-6b85-4bec-ac73-02c2afbdf62d: Default # Default
+    0039986a-3b63-4d28-99aa-896310af3de6: Administration # Administration
+    922240c2-eee7-4d85-9a4d-621f4c716186: area51 # area51
+    8216101e-3f6c-4a9f-960d-d3d0c1e8d04f: description # description
+    a014910c-11c7-4596-8d2b-1a481521db29: 'Priority case' # Priority case
+    a4ab0652-eb0d-4a94-8586-aa9e597f372c: Asset # Asset
+    a33dbeb7-7a84-494b-85f5-49871855c101: 'La Casa Blanca' # La Casa Blanca
+    a797faee-8023-449e-b5eb-50c407411969: 'Footer Navigation' # Footer Navigation
+    aab8cf58-f665-43d6-b516-27e03c9ed191: copyrightPolicy # copyrightPolicy
+    b1bd3cd1-5c0e-45fe-bc51-4aa74f2cad04: Search # Search
+    bb2f30e4-17d5-4b64-91bd-4c0270612d3b: Default # Default
+    bf94dae5-2060-49f8-8495-3439a53edc7c: 'The White House' # The White House
+    c4cef768-0e8a-48e2-af18-2e73a0cb7096: copyrightPolicy # copyrightPolicy
+    c4f70c60-94bf-40dd-936d-89917cb0b85d: SubNavigation # SubNavigation
+    cbdbba20-cdb5-4560-b9d7-d584127480af: 'Briefing Room' # Briefing Room
+    cbfb4049-9b14-4fc8-9326-030ec76d1840: Whitehouse # Whitehouse
+    d3e69d4c-4721-478d-9ca2-b24c3a77b818: Main # Main
+    d67dc55e-efe1-4063-9bd9-6f9fbdb3c655: AssetBlock # AssetBlock
+    dfc349f5-77f5-4d63-bed7-b864ac8ae064: ContentBlock # ContentBlock
+    e91a3058-1a3e-42d6-be7e-802ae6c71959: Socials # Socials
+    f44fae7f-f3e0-4625-a841-ebb232598950: 'Rich Text' # Rich Text
+    f992bd9a-db8d-4f05-836c-42c4c1b210ed: ExternalUrl # ExternalUrl
+    fc213822-3e2a-4c47-9542-c56e28b83af5: Administration # Administration
+    fdb1dfac-ad6f-4b89-9500-3a59d2820d69: Category # Category
+plugins:
+  mix:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      assetPath: dist
+      publicPath: web
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: pro
+  live: true
+  name: Whitehouse
+  schemaVersion: 4.4.0.4
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: true
+  deactivateByDefault: false
+  defaultGroup: ''
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
+  validateOnPublicRegistration: false

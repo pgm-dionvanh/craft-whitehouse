@@ -1,0 +1,34 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 07382fe0-6e29-4dea-ba8f-647254e6bae5 # Common
+handle: entryselector
+instructions: null
+name: EntrySelector
+searchable: false
+settings:
+  allowSelfRelations: false
+  localizeRelations: false
+  maxRelations: 1
+  minRelations: null
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Entry
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\entries\EntryCondition
+  selectionLabel: null
+  showSiteMenu: false
+  source: null
+  sources:
+    - singles
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

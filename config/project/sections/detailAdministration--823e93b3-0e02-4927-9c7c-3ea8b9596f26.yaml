@@ -1,0 +1,32 @@
+defaultPlacement: end
+enableVersioning: true
+handle: detailAdministration
+name: 'Detail Administration'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a33dbeb7-7a84-494b-85f5-49871855c101: # La Casa Blanca
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/_detailAdministration.twig
+    uriFormat: 'administration/{slug}'
+  bf94dae5-2060-49f8-8495-3439a53edc7c: # The White House
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/_detailAdministration.twig
+    uriFormat: 'administration/{slug}'
+structure:
+  maxLevels: null
+  uid: a90293f0-283a-4701-a1d8-f5461cb38a4c
+type: structure

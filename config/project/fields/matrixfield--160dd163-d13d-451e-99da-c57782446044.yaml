@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 07382fe0-6e29-4dea-ba8f-647254e6bae5 # Common
+handle: matrixfield
+instructions: null
+name: matrixField
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_matrixfield}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,21 @@
+
+<section class="flex justify-center mx-[25px] pt-[25px] mb-[30px]">
+    <div class="max-w-[980px] rounded-[16px] overflow-hidden relative px-[35px]" >
+        <div class="flex static list-none flex-wrap justify-center ml-[-10px]">
+            <div class="max-w-[960px] min-h-[540px]">
+                <div>
+                    <img class="bg-[50%] bg-no-repeat bg-cover bottom-0 h-full left-0 object-cover absolute right-0 top-0 w-full" width="1480" height="762" src={{ banner.asset.one().getUrl }} class="lazy-load object-fit-cover" alt="">
+                </div>
+            </div>
+            <div class="bg-[#00030d] bottom-0 left-0 right-0 top-0 absolute opacity-[.6]"></div>
+            <div class="bg-[#edbe87] rounded-[0_16px] p-[20px_30px] absolute right-0 top-0">{{ banner.tag }}</div>
+            <div class="min-w-[538px] m-auto relative text-center z-[1] flex-[0_0_66.6666666667%] max-w-[66.6666666667%] px-[10px] w-full">
+                <div class="text-center">
+                    <h2 class="text-white text-4xl">{{ banner.description }}</h2>
+                    <hr class="min-w-[380px] bg-[#e0e5ef] m-[30px_auto_45px] opacity-[.2]">
+                    <a href={{ banner.externalurl }} target="__blank" class="items-center flex-inline bg-[#0064bc] border-[2px] border-[#0064bc] rounded-[100px] text-white cursor-pointer p-[18.5px_25px] text-[13px]">{{ "banner.visit" |t }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
